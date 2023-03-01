@@ -1,0 +1,3 @@
+ly@ubuntu:CSAPPlearn$ ./main
+Floating point exception (core dumped)
+
