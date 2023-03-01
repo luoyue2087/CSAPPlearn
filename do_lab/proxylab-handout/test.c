@@ -1,13 +1,13 @@
 #include <pthread.h>
 #include <stdio.h>
-
 char ch;
 
 void* test(void*argc){
     char arr[10];
-    char ch = *((char*)argc);
-    for(int i=0; i<10; ++i)arr[i] = ch;
-    for(int i=0; i<10; ++i)printf("%c",arr[i]);printf("\n");
+    char c = *((char*)argc);
+    for(int i=0; i<10; ++i)arr[i] = c;
+    for(int i=0; i<10; ++i)printf("%c",arr[i]);
+    printf("\n");
 }
 
 int main(){
@@ -22,3 +22,4 @@ int main(){
     return 0;
 }
 //gcc test.c -pthread && ./a.out
+// TODO 为什么字符会重复
